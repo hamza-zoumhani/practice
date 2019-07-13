@@ -1,34 +1,19 @@
 <html>
 
 <head>
-    <title>for</title>
+    <title>lab</title>
 </head>
 
 <body>
     <script>
-        var rows = prompt("How many rows:")
-        var cols = prompt("How many collumns:")
 
-        function makeRow(){
-            for (var i=0; i<cols; i++){
-                document.write("X");
-            }
-        }
-        for(var n=0; n<rows; n++){
-            makeRow();
-            document.write("<br>");
-        }
-        function numberofcells(){
-            var total= rows*cols;
-            if(total>100){
-                alert("Too many rows..." + total)
-            }
-            return total;
-        }
+        var humanYears = prompt("Enter dog age:");
 
-        document.write("Number of collumns is " + cols);
-        document.write(" and number of rows is " + rows);
-        document.write(". Total number of cells is "+ numberofcells() + ".");
+        function dogAge(age){
+            document.write("dog age is " + (age*7) + " human years.");
+        }
+        
+        dogAge(humanYears);
 
     </script>
 </body>
