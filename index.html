@@ -6,16 +6,14 @@
 
 <body>
     <script>
-        function wordrepeat(word, times){
-            word =prompt("Enter word:");
-            times =prompt("Repeat how many times?");
-
-            for(var i=0; i<times; i++){
-                document.write(word + "<br>");
+        function printNum(myArray){
+            for(i =0; i<myArray.length; i++){
+                document.write("Print " + myArray[i]);
+                document.write("<br>");
             }
         }
-
-        wordrepeat();
+        var num= [3, 6, 8, 9];
+        printNum(num);
 
     </script>
 </body>
