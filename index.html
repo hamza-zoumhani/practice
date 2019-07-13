@@ -18,7 +18,17 @@
             makeRow();
             document.write("<br>");
         }
+        function numberofcells(){
+            var total= rows*cols;
+            if(total>100){
+                alert("Too many rows..." + total)
+            }
+            return total;
+        }
 
+        document.write("Number of collumns is " + cols);
+        document.write(" and number of rows is " + rows);
+        document.write(". Total number of cells is "+ numberofcells() + ".");
 
     </script>
 </body>
