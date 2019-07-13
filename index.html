@@ -6,14 +6,14 @@
 
 <body>
     <script>
+        function x(word, times){
+            word =prompt("Enter word:");
+            times =prompt("Repeat how many times?");
 
-        var humanYears = prompt("Enter dog age:");
-
-        function dogAge(age){
-            document.write("dog age is " + (age*7) + " human years.");
+            for(var i=0; i>times; i++){
+                document.write(word + "<br>");
+            }
         }
-        
-        dogAge(humanYears);
 
     </script>
 </body>
