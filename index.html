@@ -6,14 +6,16 @@
 
 <body>
     <script>
-        function x(word, times){
+        function wordrepeat(word, times){
             word =prompt("Enter word:");
             times =prompt("Repeat how many times?");
 
-            for(var i=0; i>times; i++){
+            for(var i=0; i<times; i++){
                 document.write(word + "<br>");
             }
         }
+
+        wordrepeat();
 
     </script>
 </body>
