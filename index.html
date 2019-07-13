@@ -6,16 +6,19 @@
 
 <body>
     <script>
-        var x = prompt("X: ");
-        var y = prompt("Y: ");
+        var rows = prompt("How many rows:")
+        var cols = prompt("How many collumns:")
 
-        for (var n = 0; n < y; n++) {
-            for (var i = 0; i < x; i++) {
-                document.write("+");
+        function makeRow(){
+            for (var i=0; i<cols; i++){
+                document.write("X");
             }
-            document.write("<br>")
-
         }
+        for(var n=0; n<rows; n++){
+            makeRow();
+            document.write("<br>");
+        }
+
 
     </script>
 </body>
